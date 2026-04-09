@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,24 +19,31 @@
   <nav class="nav" id="nav">
     <div class="nav-logo">MH<span class="dot">.</span></div>
     <ul class="nav-links">
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#experience">Expérience</a></li>
-      <li><a href="#contact" class="nav-cta">Contact</a></li>
+      <li><a href="#about" data-i18n="nav.about">À propos</a></li>
+      <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+      <li><a href="#experience" data-i18n="nav.experience">Expérience</a></li>
+      <li><a href="#contact" class="nav-cta" data-i18n="nav.contact">Contact</a></li>
     </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-opt" id="langFr">FR</span>
+        <span class="lang-sep">/</span>
+        <span class="lang-opt" id="langEn">EN</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </nav>
 
   <div class="mobile-menu" id="mobileMenu">
     <ul>
-      <li><a href="#about" class="mobile-link">À propos</a></li>
-      <li><a href="#skills" class="mobile-link">Skills</a></li>
-      <li><a href="#projects" class="mobile-link">Projets</a></li>
-      <li><a href="#experience" class="mobile-link">Expérience</a></li>
-      <li><a href="#contact" class="mobile-link">Contact</a></li>
+      <li><a href="#about" class="mobile-link" data-i18n="nav.about">À propos</a></li>
+      <li><a href="#skills" class="mobile-link" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="#projects" class="mobile-link" data-i18n="nav.projects">Projets</a></li>
+      <li><a href="#experience" class="mobile-link" data-i18n="nav.experience">Expérience</a></li>
+      <li><a href="#contact" class="mobile-link" data-i18n="nav.contact">Contact</a></li>
     </ul>
   </div>
 
@@ -50,7 +57,7 @@
     <div class="hero-content">
       <div class="hero-tag reveal-up" style="--d:0ms">
         <span class="status-dot"></span>
-        Disponible pour des opportunités
+        <span data-i18n="hero.available">Disponible pour des opportunités</span>
       </div>
       <h1 class="hero-name reveal-up" style="--d:100ms">
         Hammouche<br /><em>Merouane</em>
@@ -58,13 +65,13 @@
       <p class="hero-role reveal-up" style="--d:200ms">
         <span class="typed-text" id="typedText"></span><span class="typed-cursor">|</span>
       </p>
-      <p class="hero-desc reveal-up" style="--d:300ms">
+      <p class="hero-desc reveal-up" style="--d:300ms" data-i18n="hero.desc">
         Étudiant en Master SII à l'USTHB · Spécialiste IA & NLP · 
         Passionné par les LLMs, le RAG et l'optimisation algorithmique.
       </p>
       <div class="hero-actions reveal-up" style="--d:400ms">
-        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
-        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+        <a href="#projects" class="btn btn-primary" data-i18n="hero.cta1">Voir mes projets</a>
+        <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta2">Me contacter</a>
       </div>
     </div>
     <div class="hero-scroll">
@@ -76,17 +83,17 @@
   <!-- ABOUT -->
   <section class="about section" id="about">
     <div class="container">
-      <div class="section-label">01 — À propos</div>
+      <div class="section-label" data-i18n="about.label">01 — À propos</div>
       <div class="about-grid">
         <div class="about-text">
-          <h2 class="section-title">Ingénieur logiciel <em>orienté IA</em></h2>
-          <p>
+          <h2 class="section-title" data-i18n="about.title">Ingénieur logiciel <em>orienté IA</em></h2>
+          <p data-i18n="about.p1">
             Je suis étudiant en Master Systèmes Informatiques Intelligents à l'USTHB (Alger), 
             actuellement stagiaire en recherche au <strong>Laboratoire LRIA</strong>. 
             Mon mémoire porte sur un système intelligent de gestion de documents juridiques 
             exploitant les LLMs et la technique RAG.
           </p>
-          <p>
+          <p data-i18n="about.p2">
             Je m'intéresse particulièrement aux méthodes d'optimisation, au raisonnement 
             automatique et à l'apprentissage automatique. Je vise à contribuer à des projets 
             à forte valeur technologique et scientifique.
@@ -94,15 +101,15 @@
           <div class="about-stats">
             <div class="stat">
               <span class="stat-num">6+</span>
-              <span class="stat-label">Projets réalisés</span>
+              <span class="stat-label" data-i18n="about.stat1">Projets réalisés</span>
             </div>
             <div class="stat">
               <span class="stat-num">3</span>
-              <span class="stat-label">Langues maîtrisées</span>
+              <span class="stat-label" data-i18n="about.stat2">Langues maîtrisées</span>
             </div>
             <div class="stat">
               <span class="stat-num">M2</span>
-              <span class="stat-label">Niveau actuel</span>
+              <span class="stat-label" data-i18n="about.stat3">Niveau actuel</span>
             </div>
           </div>
         </div>
@@ -118,19 +125,19 @@
             </div>
             <div class="about-info">
               <div class="info-row">
-                <span class="info-label">Localisation</span>
+                <span class="info-label" data-i18n="about.loc">Localisation</span>
                 <span class="info-val">Alger, Algérie</span>
               </div>
               <div class="info-row">
-                <span class="info-label">Université</span>
+                <span class="info-label" data-i18n="about.univ">Université</span>
                 <span class="info-val">USTHB</span>
               </div>
               <div class="info-row">
-                <span class="info-label">Spécialité</span>
+                <span class="info-label" data-i18n="about.spec">Spécialité</span>
                 <span class="info-val">SII — Master 2</span>
               </div>
               <div class="info-row">
-                <span class="info-label">Labo</span>
+                <span class="info-label" data-i18n="about.lab">Labo</span>
                 <span class="info-val">LRIA</span>
               </div>
               <div class="info-row">
@@ -140,15 +147,15 @@
             </div>
             <div class="langs">
               <div class="lang-item">
-                <span>Français</span>
+                <span data-i18n="about.langFr">Français</span>
                 <div class="lang-bar"><div class="lang-fill" style="--p:100%"></div></div>
               </div>
               <div class="lang-item">
-                <span>Anglais</span>
+                <span data-i18n="about.langEn">Anglais</span>
                 <div class="lang-bar"><div class="lang-fill" style="--p:90%"></div></div>
               </div>
               <div class="lang-item">
-                <span>Arabe</span>
+                <span data-i18n="about.langAr">Arabe</span>
                 <div class="lang-bar"><div class="lang-fill" style="--p:100%"></div></div>
               </div>
             </div>
@@ -161,15 +168,15 @@
   <!-- SKILLS -->
   <section class="skills section" id="skills">
     <div class="container">
-      <div class="section-label">02 — Compétences</div>
-      <h2 class="section-title">Stack <em>technique</em></h2>
+      <div class="section-label" data-i18n="skills.label">02 — Compétences</div>
+      <h2 class="section-title" data-i18n="skills.title">Stack <em>technique</em></h2>
       <div class="skills-grid">
 
         <div class="skill-card">
           <div class="skill-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
           </div>
-          <h3>IA & Machine Learning</h3>
+          <h3 data-i18n="skills.ai">IA & Machine Learning</h3>
           <div class="skill-tags">
             <span>Scikit-learn</span><span>Pandas</span><span>NumPy</span>
             <span>LLMs</span><span>RAG</span><span>NLP</span>
@@ -181,7 +188,7 @@
           <div class="skill-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           </div>
-          <h3>Langages</h3>
+          <h3 data-i18n="skills.langs">Langages</h3>
           <div class="skill-tags">
             <span>Python</span><span>Java</span><span>C/C++</span>
             <span>JavaScript</span><span>SQL</span><span>Dart</span>
@@ -192,7 +199,7 @@
           <div class="skill-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
           </div>
-          <h3>Développement Web</h3>
+          <h3 data-i18n="skills.web">Développement Web</h3>
           <div class="skill-tags">
             <span>React.js</span><span>HTML/CSS</span><span>Node.js</span>
             <span>Express.js</span><span>MongoDB</span><span>SQLite</span>
@@ -203,7 +210,7 @@
           <div class="skill-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
           </div>
-          <h3>Mobile & Data</h3>
+          <h3 data-i18n="skills.mobile">Mobile & Data</h3>
           <div class="skill-tags">
             <span>Flutter</span><span>Firebase</span>
             <span>Matplotlib</span><span>Seaborn</span><span>GeoPandas</span>
@@ -214,10 +221,10 @@
           <div class="skill-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
           </div>
-          <h3>Algorithmique</h3>
+          <h3 data-i18n="skills.algo">Algorithmique</h3>
           <div class="skill-tags">
             <span>BFS/DFS</span><span>A*</span><span>PSO</span>
-            <span>Optimisation</span><span>Clustering</span><span>Classification</span>
+            <span data-i18n="skills.algo.opt">Optimisation</span><span>Clustering</span><span>Classification</span>
           </div>
         </div>
 
@@ -225,10 +232,12 @@
           <div class="skill-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <h3>Soft Skills</h3>
+          <h3 data-i18n="skills.soft">Soft Skills</h3>
           <div class="skill-tags">
-            <span>Gestion de projet</span><span>Leadership</span>
-            <span>Travail d'équipe</span><span>Pensée critique</span>
+            <span data-i18n="skills.soft.pm">Gestion de projet</span>
+            <span data-i18n="skills.soft.lead">Leadership</span>
+            <span data-i18n="skills.soft.team">Travail d'équipe</span>
+            <span data-i18n="skills.soft.crit">Pensée critique</span>
           </div>
         </div>
 
@@ -239,18 +248,18 @@
   <!-- PROJECTS -->
   <section class="projects section" id="projects">
     <div class="container">
-      <div class="section-label">03 — Projets</div>
-      <h2 class="section-title">Ce que j'ai <em>construit</em></h2>
+      <div class="section-label" data-i18n="projects.label">03 — Projets</div>
+      <h2 class="section-title" data-i18n="projects.title">Ce que j'ai <em>construit</em></h2>
       <div class="projects-list">
 
         <article class="project-item featured">
           <div class="project-meta">
             <span class="project-num">01</span>
-            <span class="project-badge">En cours · Mémoire PFE</span>
+            <span class="project-badge" data-i18n="projects.p1.badge">En cours · Mémoire PFE</span>
           </div>
           <div class="project-body">
-            <h3>Système Intelligent d'Analyse de Documents Juridiques</h3>
-            <p>Prototype RAG exploitant les LLMs pour extraire les informations clés, retrouver les dispositions légales pertinentes et générer des résumés concis à partir de corpus juridiques publics algériens.</p>
+            <h3 data-i18n="projects.p1.title">Système Intelligent d'Analyse de Documents Juridiques</h3>
+            <p data-i18n="projects.p1.desc">Prototype RAG exploitant les LLMs pour extraire les informations clés, retrouver les dispositions légales pertinentes et générer des résumés concis à partir de corpus juridiques publics algériens.</p>
             <div class="project-tags">
               <span>Python</span><span>HuggingFace</span><span>LangChain</span>
               <span>RAG</span><span>Mistral-7B</span><span>FAISS</span><span>NLP</span>
@@ -266,8 +275,8 @@
             <span class="project-num">02</span>
           </div>
           <div class="project-body">
-            <h3>Job Shop Scheduling × PSO</h3>
-            <p>Optimisation du temps de production via un algorithme PSO amélioré avec opérateurs de mutation et gestion de stagnation. Évalué sur les benchmarks Taillard.</p>
+            <h3 data-i18n="projects.p2.title">Job Shop Scheduling × PSO</h3>
+            <p data-i18n="projects.p2.desc">Optimisation du temps de production via un algorithme PSO amélioré avec opérateurs de mutation et gestion de stagnation. Évalué sur les benchmarks Taillard.</p>
             <div class="project-tags">
               <span>Python</span><span>OOP</span><span>Optimisation</span><span>PSO</span><span>Metaheuristique</span>
             </div>
@@ -282,8 +291,8 @@
             <span class="project-num">03</span>
           </div>
           <div class="project-body">
-            <h3>Application Mobile de Gestion de Présence</h3>
-            <p>Application Flutter + Firebase avec suivi en temps réel et partage de fichiers P2P via Wi-Fi direct, sans connexion Internet.</p>
+            <h3 data-i18n="projects.p3.title">Application Mobile de Gestion de Présence</h3>
+            <p data-i18n="projects.p3.desc">Application Flutter + Firebase avec suivi en temps réel et partage de fichiers P2P via Wi-Fi direct, sans connexion Internet.</p>
             <div class="project-tags">
               <span>Flutter</span><span>Firebase</span><span>Dart</span><span>P2P</span><span>Full-stack Mobile</span>
             </div>
@@ -298,8 +307,8 @@
             <span class="project-num">04</span>
           </div>
           <div class="project-body">
-            <h3>Modélisation des Risques d'Incendies de Forêts</h3>
-            <p>Analyse multi-sources (sol, climat, élévation) pour identifier les zones à risque en Algérie et Tunisie, combinant approches supervisées et non supervisées.</p>
+            <h3 data-i18n="projects.p4.title">Modélisation des Risques d'Incendies de Forêts</h3>
+            <p data-i18n="projects.p4.desc">Analyse multi-sources (sol, climat, élévation) pour identifier les zones à risque en Algérie et Tunisie, combinant approches supervisées et non supervisées.</p>
             <div class="project-tags">
               <span>Python</span><span>Scikit-learn</span><span>GeoPandas</span>
               <span>K-Means</span><span>DBSCAN</span><span>Random Forest</span>
@@ -315,8 +324,8 @@
             <span class="project-num">05</span>
           </div>
           <div class="project-body">
-            <h3>Classification de Parfums par Genre</h3>
-            <p>Comparaison de modèles ML (Logistic Regression, KNN, Decision Tree, Random Forest, SVC, XGBoost) pour classifier les parfums selon leurs notes olfactives.</p>
+            <h3 data-i18n="projects.p5.title">Classification de Parfums par Genre</h3>
+            <p data-i18n="projects.p5.desc">Comparaison de modèles ML (Logistic Regression, KNN, Decision Tree, Random Forest, SVC, XGBoost) pour classifier les parfums selon leurs notes olfactives.</p>
             <div class="project-tags">
               <span>Python</span><span>XGBoost</span><span>Scikit-learn</span><span>Pandas</span><span>Seaborn</span>
             </div>
@@ -331,8 +340,8 @@
             <span class="project-num">06</span>
           </div>
           <div class="project-body">
-            <h3>Site Vitrine SARL REMY</h3>
-            <p>Solution web full-stack MERN avec catalogue produits, formulaire de contact et dashboard administrateur, optimisée SEO.</p>
+            <h3 data-i18n="projects.p6.title">Site Vitrine SARL REMY</h3>
+            <p data-i18n="projects.p6.desc">Solution web full-stack MERN avec catalogue produits, formulaire de contact et dashboard administrateur, optimisée SEO.</p>
             <div class="project-tags">
               <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>SEO</span>
             </div>
@@ -349,27 +358,27 @@
   <!-- EXPERIENCE -->
   <section class="experience section" id="experience">
     <div class="container">
-      <div class="section-label">04 — Parcours</div>
-      <h2 class="section-title">Formation & <em>Expérience</em></h2>
+      <div class="section-label" data-i18n="exp.label">04 — Parcours</div>
+      <h2 class="section-title" data-i18n="exp.title">Formation & <em>Expérience</em></h2>
       <div class="timeline">
 
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-date">2024 — Aujourd'hui</div>
+          <div class="timeline-date" data-i18n="exp.e1.date">2024 — Aujourd'hui</div>
           <div class="timeline-content">
-            <span class="timeline-type edu">Formation</span>
-            <h3>Master en Systèmes Informatiques Intelligents</h3>
-            <p>USTHB, Alger · Spécialisation IA, NLP, Optimisation · Mémoire sur les LLMs et RAG</p>
+            <span class="timeline-type edu" data-i18n="exp.edu">Formation</span>
+            <h3 data-i18n="exp.e1.title">Master en Systèmes Informatiques Intelligents</h3>
+            <p data-i18n="exp.e1.desc">USTHB, Alger · Spécialisation IA, NLP, Optimisation · Mémoire sur les LLMs et RAG</p>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-dot active"></div>
-          <div class="timeline-date">Sept. 2025 — Aujourd'hui</div>
+          <div class="timeline-date" data-i18n="exp.e2.date">Sept. 2025 — Aujourd'hui</div>
           <div class="timeline-content">
-            <span class="timeline-type work">Recherche</span>
-            <h3>Stagiaire en Recherche — Laboratoire LRIA</h3>
-            <p>USTHB · Développement d'un système intelligent d'analyse de documents juridiques algériens (LLMs, RAG, NLP)</p>
+            <span class="timeline-type work" data-i18n="exp.research">Recherche</span>
+            <h3 data-i18n="exp.e2.title">Stagiaire en Recherche — Laboratoire LRIA</h3>
+            <p data-i18n="exp.e2.desc">USTHB · Développement d'un système intelligent d'analyse de documents juridiques algériens (LLMs, RAG, NLP)</p>
           </div>
         </div>
 
@@ -377,19 +386,19 @@
           <div class="timeline-dot"></div>
           <div class="timeline-date">2023 — 2024</div>
           <div class="timeline-content">
-            <span class="timeline-type edu">Formation</span>
-            <h3>Licence en Informatique</h3>
+            <span class="timeline-type edu" data-i18n="exp.edu">Formation</span>
+            <h3 data-i18n="exp.e3.title">Licence en Informatique</h3>
             <p>USTHB, Alger</p>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-date">Juil. 2023 — Sept. 2025</div>
+          <div class="timeline-date" data-i18n="exp.e4.date">Juil. 2023 — Sept. 2025</div>
           <div class="timeline-content">
-            <span class="timeline-type work">Travail</span>
-            <h3>Vendeur / Caissier — Le Monde du Chocolat</h3>
-            <p>Gestion de la caisse, service client, travail en équipe</p>
+            <span class="timeline-type work" data-i18n="exp.work">Travail</span>
+            <h3 data-i18n="exp.e4.title">Vendeur / Caissier — Le Monde du Chocolat</h3>
+            <p data-i18n="exp.e4.desc">Gestion de la caisse, service client, travail en équipe</p>
           </div>
         </div>
 
@@ -397,9 +406,9 @@
           <div class="timeline-dot"></div>
           <div class="timeline-date">2020 — 2021</div>
           <div class="timeline-content">
-            <span class="timeline-type edu">Formation</span>
-            <h3>Baccalauréat Scientifique — Option Mathématiques</h3>
-            <p>Lycée Said-Hamdin, Hydra, Alger</p>
+            <span class="timeline-type edu" data-i18n="exp.edu">Formation</span>
+            <h3 data-i18n="exp.e5.title">Baccalauréat Scientifique — Option Mathématiques</h3>
+            <p data-i18n="exp.e5.desc">Lycée Said-Hamdin, Hydra, Alger</p>
           </div>
         </div>
 
@@ -410,11 +419,11 @@
   <!-- CONTACT -->
   <section class="contact section" id="contact">
     <div class="container">
-      <div class="section-label">05 — Contact</div>
+      <div class="section-label" data-i18n="contact.label">05 — Contact</div>
       <div class="contact-wrap">
         <div class="contact-left">
-          <h2 class="section-title">Travaillons <em>ensemble</em></h2>
-          <p>Je suis ouvert aux opportunités de stage, collaboration sur des projets IA/NLP, ou simplement discuter de tech. N'hésitez pas à me contacter !</p>
+          <h2 class="section-title" data-i18n="contact.title">Travaillons <em>ensemble</em></h2>
+          <p data-i18n="contact.desc">Je suis ouvert aux opportunités de stage, collaboration sur des projets IA/NLP, ou simplement discuter de tech. N'hésitez pas à me contacter !</p>
           <div class="contact-links">
             <a href="mailto:merouane.hammouche667@gmail.com" class="contact-link">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
@@ -433,24 +442,24 @@
         <div class="contact-right">
           <div class="contact-card">
             <div class="contact-card-header">
-              <span class="status-dot"></span> Disponible pour des missions
+              <span class="status-dot"></span> <span data-i18n="contact.available">Disponible pour des missions</span>
             </div>
             <div class="contact-domains">
               <div class="domain-item">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                <span>Projets IA / NLP / LLMs</span>
+                <span data-i18n="contact.d1">Projets IA / NLP / LLMs</span>
               </div>
               <div class="domain-item">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                <span>Développement logiciel</span>
+                <span data-i18n="contact.d2">Développement logiciel</span>
               </div>
               <div class="domain-item">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-                <span>Recherche académique</span>
+                <span data-i18n="contact.d3">Recherche académique</span>
               </div>
               <div class="domain-item">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-                <span>Stages & Alternances</span>
+                <span data-i18n="contact.d4">Stages & Alternances</span>
               </div>
             </div>
           </div>
