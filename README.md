@@ -8,8 +8,7 @@
 
 1. Va sur [github.com](https://github.com) et connecte-toi
 2. Clique sur **New repository**
-3. Nomme-le **exactement** : `ton-username.github.io`  
-   *(remplace `ton-username` par ton nom d'utilisateur GitHub)*
+3. Nomme-le **exactement** : `shi667.github.io`
 4. Coche **Public** et crée le repo
 
 ### Étape 2 — Uploader les fichiers
@@ -25,7 +24,7 @@ git init
 git add .
 git commit -m "Initial portfolio"
 git branch -M main
-git remote add origin https://github.com/ton-username/ton-username.github.io.git
+git remote add origin https://github.com/shi667/shi667.github.io.git
 git push -u origin main
 ```
 
@@ -39,7 +38,7 @@ git push -u origin main
 
 Ton portfolio sera disponible à :
 ```
-https://ton-username.github.io
+https://shi667.github.io
 ```
 *(Attends 1-2 minutes après le déploiement)*
 
