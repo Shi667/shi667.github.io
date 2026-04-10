@@ -6,7 +6,7 @@
   <title>Merouane Hammouche — AI & Software Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -49,10 +49,11 @@
 
   <!-- HERO -->
   <section class="hero" id="hero">
+    <canvas id="neuralCanvas"></canvas>
     <div class="hero-bg">
-      <div class="grid-lines"></div>
       <div class="glow glow-1"></div>
       <div class="glow glow-2"></div>
+      <div class="glow glow-3"></div>
     </div>
     <div class="hero-content">
       <div class="hero-tag reveal-up" style="--d:0ms">
@@ -60,7 +61,7 @@
         <span data-i18n="hero.available">Disponible pour des opportunités</span>
       </div>
       <h1 class="hero-name reveal-up" style="--d:100ms">
-        Hammouche<br /><em>Merouane</em>
+        <span class="glitch" data-text="Hammouche">Hammouche</span><br /><em>Merouane</em>
       </h1>
       <p class="hero-role reveal-up" style="--d:200ms">
         <span class="typed-text" id="typedText"></span><span class="typed-cursor">|</span>
