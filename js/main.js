@@ -18,7 +18,7 @@ const translations = {
     'hero.cta2': 'Me contacter',
 
     'about.label': '01 — À propos',
-    'about.title': 'Ingénieur logiciel <em>orienté IA</em>',
+    'about.title': 'Ingénieur <em>IA & NLP</em>',
     'about.p1': 'Je suis étudiant en Master Systèmes Informatiques Intelligents à l\'USTHB (Alger), actuellement stagiaire en recherche au <strong>Laboratoire LRIA</strong>. Mon mémoire porte sur un système intelligent de gestion de documents juridiques exploitant les LLMs et la technique RAG.',
     'about.p2': 'Je m\'intéresse particulièrement aux méthodes d\'optimisation, au raisonnement automatique et à l\'apprentissage automatique. Je vise à contribuer à des projets à forte valeur technologique et scientifique.',
     'about.stat1': 'Projets réalisés',
@@ -102,7 +102,7 @@ const translations = {
     'hero.cta2': 'Get in touch',
 
     'about.label': '01 — About',
-    'about.title': 'Software engineer <em>focused on AI</em>',
+    'about.title': 'AI & NLP <em>Engineer</em>',
     'about.p1': 'I am a Master\'s student in Intelligent Computer Systems at USTHB (Algiers), currently a research intern at the <strong>LRIA Laboratory</strong>. My thesis focuses on an intelligent legal document management system leveraging LLMs and the RAG technique.',
     'about.p2': 'I am particularly interested in optimization methods, automated reasoning and machine learning. I aim to contribute to projects with high technological and scientific value.',
     'about.stat1': 'Projects completed',
@@ -179,11 +179,11 @@ const translations = {
 let currentLang = localStorage.getItem('portfolio-lang') || 'fr';
 
 const typedPhrases = {
-  fr: ['Master SII @ USTHB', 'Spécialiste IA & NLP', 'Expert LLMs & RAG', 'Développeur Full-Stack', 'Stagiaire Chercheur @ LRIA'],
-  en: ['Master SII @ USTHB', 'AI & NLP Specialist', 'LLMs & RAG Expert', 'Full-Stack Developer', 'Research Intern @ LRIA']
+  fr: ['Master SII @ USTHB', 'Spécialiste IA & NLP', 'Expert LLMs & RAG', 'Stagiaire Chercheur @ LRIA'],
+  en: ['Master SII @ USTHB', 'AI & NLP Specialist', 'LLMs & RAG Expert', 'Research Intern @ LRIA']
 };
 
-function applyLang(lang) {
+window.applyLang = function applyLang(lang) {
   currentLang = lang;
   localStorage.setItem('portfolio-lang', lang);
   document.documentElement.setAttribute('lang', lang);
@@ -214,10 +214,6 @@ function applyLang(lang) {
     document.body.style.opacity = '1';
   }, 180);
 }
-
-document.getElementById('langToggle').addEventListener('click', () => {
-  applyLang(currentLang === 'fr' ? 'en' : 'fr');
-});
 
 // Init lang on load
 applyLang(currentLang);
